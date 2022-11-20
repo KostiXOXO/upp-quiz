@@ -5,5 +5,5 @@ import image from "@astrojs/image";
 export default defineConfig({
   integrations: [react(), image()],
   site: "https://kostixoxo.github.io",
-  base: "/my-repo",
+  base: "/upp-quiz",
 });
