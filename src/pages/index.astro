@@ -4,7 +4,7 @@ import { Image } from "@astrojs/image/components";
 
 type TQuiz = { img: string; faculty: string; id: string }[];
 
-const res = await fetch("http:localhost:3000/data.json");
+const res = await fetch("https://kostixoxo.github.io/data.json");
 const { cards }: { cards: TQuiz } = await res.json();
 
 let step = 0;
