@@ -9,20 +9,15 @@ const { cards }: { cards: TQuiz } = await res.json();
 
 let step = 0;
 let result = "";
-
-const onClick = (id: string) => {
-  result = cards.find((card) => card.id === id)?.img || "";
-  step = step + 1;
-};
 ---
 
 <Layout title="UPP Quiz">
   <main>
     <h1>Wybierz które zdjęcie ci sie najbardziej podoba</h1>
     <div class="cards">
-      <!-- {
+      {
         cards.map((card) => (
-          <div class="card" onclick={() => onClick(card.id)} >
+          <div class="card">
             <Image
               src={import("../src/assets/" + card.img)}
               alt=""
@@ -31,7 +26,7 @@ const onClick = (id: string) => {
             />
           </div>
         ))
-      } -->
+      }
     </div>
     <div class="result">
       {
