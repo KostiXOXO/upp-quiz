@@ -1,0 +1,46 @@
+.quizContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: max-content;
+  margin-inline: auto;
+  min-height: calc((150px * 2) + 2rem);
+  max-width: min(calc(600px + 2rem), 100vw);
+}
+
+.card {
+  flex-basis: 30%;
+  display: flex;
+}
+
+.card > img {
+  width: 200px;
+  height: 150px;
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 0.25rem;
+}
+
+.card > img:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+.bottomBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bottomBox > button {
+  width: max-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.bottomBox > button:hover {
+  cursor: pointer;
+}
