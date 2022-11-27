@@ -83,7 +83,9 @@ const Quiz = () => {
       <div className="bottomBox">
         <p>Krok {`${round - 1}/5`}</p>
         {round >= 6 && <Results result={result} />}
-        <button onClick={restart}>Restart?</button>
+        <button className="restartButton" onClick={restart}>
+          Restart?
+        </button>
       </div>
     </>
   );

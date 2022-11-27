@@ -1,5 +1,6 @@
 import { Faculties, Faculty } from "../utils/dataTypes";
 import { getMax } from "../utils/getMax";
+import "./styles.css";
 
 type Props = {
   result: { [key: string]: number };
@@ -15,7 +16,9 @@ const Results: React.FC<Props> = ({ result }) => {
         style={{ all: "unset", cursor: "pointer" }}
       >
         Najbardziej pasuje do Ciebie:{" "}
-        <strong>{Faculties[max?.[0] as Faculty]}</strong>
+        <strong className="animated-text">
+          {Faculties[max?.[0] as Faculty]}
+        </strong>
       </a>
     </div>
   );

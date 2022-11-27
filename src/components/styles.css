@@ -46,3 +46,43 @@
 .bottomBox > button:hover {
   cursor: pointer;
 }
+
+.restartButton:hover {
+  animation: border 1s ease-out infinite alternate;
+}
+
+.animated-text {
+  animation: pulse 3s ease-out infinite alternate;
+  color: rgb(0, 69, 165);
+}
+
+@keyframes pulse {
+  0% {
+    color: rgb(0, 69, 165);
+  }
+
+  70% {
+    color: rgb(3, 105, 248);
+  }
+
+  100% {
+    color: rgb(0, 153, 255);
+  }
+}
+
+@keyframes border {
+  0% {
+    border-color: rgb(0, 0, 0);
+  }
+
+  45% {
+    border-color: rgb(0, 69, 165);
+  }
+  70% {
+    border-color: rgb(3, 105, 248);
+  }
+
+  100% {
+    border-color: rgb(0, 153, 255);
+  }
+}
