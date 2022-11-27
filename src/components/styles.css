@@ -55,6 +55,9 @@
   animation: pulse 3s ease-out infinite alternate;
   color: rgb(0, 69, 165);
 }
+.resultsContainer {
+  text-align: center;
+}
 
 @keyframes pulse {
   0% {
