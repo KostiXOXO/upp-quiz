@@ -13,13 +13,15 @@
   "dependencies": {
     "@astrojs/image": "^0.11.6",
     "@astrojs/react": "^1.2.2",
-    "@types/react": "^18.0.25",
-    "@types/react-dom": "^18.0.9",
+    "@astrojs/vercel": "^2.3.4",
+    "@formkit/auto-animate": "^1.0.0-beta.5",
     "astro": "^1.6.10",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "experimental",
+    "react-dom": "experimental"
   },
   "devDependencies": {
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
     "prettier": "^2.7.1"
   }
 }
