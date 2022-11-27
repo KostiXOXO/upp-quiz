@@ -16,11 +16,20 @@ import Quiz from "../components/Quiz";
         gap: 2rem;
         padding-block: 1rem 3rem;
       }
+
       h1 {
         font-size: 2.5rem;
         margin: 0;
         font-weight: 400;
         text-align: center;
+      }
+      @media only screen and (max-width: 600px) {
+        h1 {
+          font-size: 1.75rem;
+        }
+        main {
+          gap: 1rem;
+        }
       }
     </style>
   </main>
