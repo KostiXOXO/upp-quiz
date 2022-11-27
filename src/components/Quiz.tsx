@@ -34,6 +34,14 @@ const Quiz = () => {
     useState<{ [Property in Faculty]: number }>(initialResult);
   const [{ start, end, round }, setRound] = useState(initialRound);
 
+  useEffect(() => {
+    if (round !== 6) return;
+    window.scrollTo({
+      behavior: "smooth",
+      top: document.querySelector(".bottomBox")?.getBoundingClientRect().bottom,
+    });
+  }, [round]);
+
   const restart = () => {
     setResult(initialResult);
     setRound(initialRound);
