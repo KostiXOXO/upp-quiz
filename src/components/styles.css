@@ -22,6 +22,8 @@
   cursor: pointer;
   transition: all 0.2s;
   border-radius: 0.25rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card > img:hover {
